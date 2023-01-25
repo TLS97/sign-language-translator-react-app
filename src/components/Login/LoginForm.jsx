@@ -42,7 +42,7 @@ const LoginForm = () => {
         setLoading(false)
     }
 
-    
+
     //Render Functions
     const errorMessage = (() => {
         if (!errors.username) {
@@ -63,8 +63,8 @@ const LoginForm = () => {
                     <label htmlFor="username">Username: </label>
                     <input type="text" placeholder="What's your name?" {...register("username", usernameConfig)} />
                     {errorMessage}
+                    <button type="submit" disabled={loading}>→</button>
                 </fieldset>
-                <button type="submit" disabled={loading}>→</button>
                 {loading && <p>Logging in...</p>}
                 {apiError && <>{apiError}</>}
             </form>
