@@ -4,7 +4,7 @@ const apiUrl = process.env.REACT_APP_API_URL;
 
 const userExists = async (username) => {
   try {
-    const response = fetch(`${apiUrl}?username=${username}`);
+    const response = await fetch(`${apiUrl}?username=${username}`);
     if (!response.ok) {
       throw new Error("Could not complete request.");
     }
