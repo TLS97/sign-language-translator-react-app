@@ -10,7 +10,6 @@ const Profile = () => {
 
   return (
     <>
-      <div>Profile</div>
       <ProfileActions/>
       <ProfileHeader username={user.username} />
       <ProfileTranslationHistory translations={user.translations}/>
