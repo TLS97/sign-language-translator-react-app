@@ -8,7 +8,7 @@ const ProfileTranslationHistory = ({translations}) => {
             <h4>Your translation history</h4>
             {translationList.length === 0 && <p>You have no translations.</p>}
             <ul>
-                { translationList }
+                { translationList.slice(-10) }
             </ul>
         </section>
     )
