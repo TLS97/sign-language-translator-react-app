@@ -59,14 +59,15 @@ const LoginForm = () => {
     return (
         <>
             <div id="login-banner">
-                <img src={"Logo.png"} width="200px" />
+                <img className="img splash" src={"Splash.svg"} width="250px" />
+                <img className="img logo" src={"Logo.png"} width="200px" />
                 <div>
                     <h1>Lost in Translation</h1>
                     <h3>Get started</h3>
                 </div>
             </div>
             <form className="form login" onSubmit={handleSubmit(onSubmit)}>
-                <div id="login-input">
+                <div className="input login">
                     <img src={"keyboard.png"} width="25px" height="25px" />
                     <label>|</label>
                     <input type="text" placeholder="What's your name?" {...register("username", usernameConfig)} />

@@ -4,13 +4,13 @@ const ProfileTranslationHistory = ({translations}) => {
     const translationList = translations.map(
         (translation, index) => <ProfileTranslationHistoryItem key={index + '-' + translation} translation={translation}/>)
     return (
-        <section>
-            <h4>Your translation history</h4>
+        <div className="form profile">
+            <h2>Your translation history</h2>
             {translationList.length === 0 && <p>You have no translations.</p>}
             <ul>
                 { translationList.slice(-10) }
             </ul>
-        </section>
+        </div>
     )
 }
 export default ProfileTranslationHistory

@@ -1,6 +1,6 @@
 const ProfileHeader = ({username}) => {
     return (
-        <p>Hello, {username}</p>
+        <h2>Hello, {username}</h2>
     )
 }
 export default ProfileHeader

@@ -11,11 +11,12 @@ const TranslationsForm = ({ onTranslate }) => {
     
   return (
     <div className="translation banner">
-        <form className="form translation" onSubmit={ handleSubmit(onSubmit) }>
-          <div id="login-input">
+        <form onSubmit={ handleSubmit(onSubmit) }>
+          <div className="input translation">
             <img src={"keyboard.png"} alt="" width="25" height="25"/>
+            <label>|</label>
             <input  type="text" {...register('translationNotes')} placeholder="Hello" maxLength="40" />
-            <button type="submit"><img src={"submit-button.png"} alt="Translate" width="30" /></button>
+            <button type="submit"><img src={"submit-button.png"} alt="Translate" width="40" /></button>
           </div>
         </form>
     </div>
