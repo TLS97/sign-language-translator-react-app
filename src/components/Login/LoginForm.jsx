@@ -58,16 +58,28 @@ const LoginForm = () => {
 
     return (
         <>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <fieldset>
-                    <label htmlFor="username">Username: </label>
-                    <input type="text" placeholder="What's your name?" {...register("username", usernameConfig)} />
-                    {errorMessage}
-                    <button type="submit" disabled={loading}>→</button>
-                </fieldset>
-                {loading && <p>Logging in...</p>}
-                {apiError && <>{apiError}</>}
-            </form>
+            <div id="login-banner">
+                <img src={"Logo.png"} width="200px" />
+                <div>
+                    <h1>Lost in Translation</h1>
+                    <h3>Get started</h3>
+                </div>
+
+            </div>
+                <form id="login-form" onSubmit={handleSubmit(onSubmit)}>
+                    <div id="login-input">
+                        <img src={"keyboard.png"} width="25px" height="25" />
+                        <label>|</label>
+                        <input type="text" placeholder="What's your name?" {...register("username", usernameConfig)} />
+                        {errorMessage}
+                        <button type="submit" disabled={loading}>
+                            <img src="submit-button.png" width="40px" />
+                        </button>
+                    </div>
+                    {loading && <p>Logging in...</p>}
+                    {apiError && <>{apiError}</>}
+                </form>
+
         </>
     )
 }
