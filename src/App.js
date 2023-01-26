@@ -3,10 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./views/Login";
 import Profile from "./views/Profile";
 import Translations from "./views/Translations";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <div className="App">
         <Routes>
           <Route path="/" element={<Login />} />
