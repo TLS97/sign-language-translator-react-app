@@ -32,7 +32,62 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+#login-banner {
+  display: flex;
+  position: relative;
+  background-color: #FFC75F;
+  color: white;
+  text-align: left;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 120px;
+  z-index: 2;
+}
+
+#login-form {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  align-items: center;
+  left: 25%;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px grey;
+  width: 500px;
+  height: 100px;
+  z-index: 3;
+}
+
+
+#login-input {
+  display:flex;
+  position: absolute;
+  left: 10%;
+  align-items: center;
+  border: 3px solid lightgrey;
+  border-radius: 25px;
+  width: 400px;
+
+}
+
+#login-input button {
+  display: flex;
+  position: relative;
+  left: 35%;
+  padding: 0;
+  border: none;
+  background: none;
+}
+#login-input input {
+  padding: 5px;
+  border: none;
+  background: none;
+  outline: none;
 }
