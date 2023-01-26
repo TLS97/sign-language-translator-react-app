@@ -10,10 +10,13 @@ const TranslationsForm = ({ onTranslate }) => {
       onTranslate(translationNotes)}
     
   return (
-    <div>
-        <form onSubmit={ handleSubmit(onSubmit) }>
-            <input type="text" {...register('translationNotes')} placeholder="Hello" maxLength="40" />
+    <div className="translation banner">
+        <form className="form translation" onSubmit={ handleSubmit(onSubmit) }>
+          <div id="login-input">
+            <img src={"keyboard.png"} alt="" width="25" height="25"/>
+            <input  type="text" {...register('translationNotes')} placeholder="Hello" maxLength="40" />
             <button type="submit"><img src={"submit-button.png"} alt="Translate" width="30" /></button>
+          </div>
         </form>
     </div>
   )

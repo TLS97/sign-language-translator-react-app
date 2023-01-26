@@ -10,10 +10,9 @@ const TranslationsSigns = ({translation}) => {
         (character, index) => <TranslationsSign key={ index + "-" + character } image={`individial_signs/${character}.png`} name={character} />)
 
   return (
-    <section>
-        <h4>Translation</h4>
+    <section className="form signs">
         { translationList.length === 0 && <p>You have no translations yet.</p>}
-        <ul>
+        <ul className="translation list">
             { translationList }
         </ul>
     </section>

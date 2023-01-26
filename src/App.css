@@ -96,6 +96,7 @@
   border: none;
   background: none;
 }
+
 #login-input input {
   border: none;
   background: none;
@@ -148,4 +149,22 @@
 #navbar-user img {
   width: 40px;
   height: 40px;
+}
+
+.form.translation {
+  top: 20%;
+}
+
+.form.signs {
+  top: 50%;
+  height:auto;
+}
+
+.translation.list {
+  padding: 5px;
+}
+
+.translation.banner {
+  height: 190px;
+  background-color: #FFC75F;
 }
