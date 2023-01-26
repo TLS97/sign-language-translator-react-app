@@ -66,7 +66,7 @@ const LoginForm = () => {
                 </div>
             </div>
             <form className="form login" onSubmit={handleSubmit(onSubmit)}>
-                <div id="login-input">
+                <div className="input login">
                     <img src={"keyboard.png"} width="25px" height="25px" />
                     <label>|</label>
                     <input type="text" placeholder="What's your name?" {...register("username", usernameConfig)} />
