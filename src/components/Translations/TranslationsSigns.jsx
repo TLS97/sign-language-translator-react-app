@@ -3,9 +3,9 @@ import TranslationsSign from './TranslationsSign'
 
 const TranslationsSigns = ({translation}) => {
 
-  console.log(translation)
+  // console.log(translation)
   const translationCharactersList = translation.split("");
-  console.log(translationCharactersList)
+  //console.log(translationCharactersList)
     const translationList = translationCharactersList.map(
         (character, index) => <TranslationsSign key={ index + "-" + character } image={`individial_signs/${character}.png`} name={character} />)
 
