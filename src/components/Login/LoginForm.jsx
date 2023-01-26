@@ -59,7 +59,8 @@ const LoginForm = () => {
     return (
         <>
             <div id="login-banner">
-                <img src={"Logo.png"} width="200px" />
+                <img className="img splash" src={"Splash.svg"} width="250px" />
+                <img className="img logo" src={"Logo.png"} width="200px" />
                 <div>
                     <h1>Lost in Translation</h1>
                     <h3>Get started</h3>
