@@ -64,22 +64,20 @@ const LoginForm = () => {
                     <h1>Lost in Translation</h1>
                     <h3>Get started</h3>
                 </div>
-
             </div>
-                <form id="login-form" onSubmit={handleSubmit(onSubmit)}>
-                    <div id="login-input">
-                        <img src={"keyboard.png"} width="25px" height="25" />
-                        <label>|</label>
-                        <input type="text" placeholder="What's your name?" {...register("username", usernameConfig)} />
-                        {errorMessage}
-                        <button type="submit" disabled={loading}>
-                            <img src="submit-button.png" width="40px" />
-                        </button>
-                    </div>
-                    {loading && <p>Logging in...</p>}
-                    {apiError && <>{apiError}</>}
-                </form>
-
+            <form className="form login" onSubmit={handleSubmit(onSubmit)}>
+                <div id="login-input">
+                    <img src={"keyboard.png"} width="25px" height="25px" />
+                    <label>|</label>
+                    <input type="text" placeholder="What's your name?" {...register("username", usernameConfig)} />
+                    <button type="submit" disabled={loading}>
+                        <img src="submit-button.png" width="40px" />
+                    </button>
+                </div>
+                <label id="login-error">{errorMessage}</label>
+            </form>
+            {loading && <p>Logging in...</p>}
+            {apiError && <>{apiError}</>}
         </>
     )
 }
