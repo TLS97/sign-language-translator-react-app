@@ -9,7 +9,7 @@ import { STORAGE_KEY_USER } from '../constants/storageKeys';
 
 const Translations = () => {
 
-  const [ translation, setTranslation ] = useState("Hello");
+  const [ translation, setTranslation ] = useState("hello");
   const { user, setUser } = useUser();
 
   const handleTranslateClick = async translation => {
