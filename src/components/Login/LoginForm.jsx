@@ -63,7 +63,7 @@ const LoginForm = () => {
                 <img className="img logo" src={"Logo.png"} width="200px" />
                 <div>
                     <h1>Lost in Translation</h1>
-                    <h3>Get started</h3>
+                    <h2>Get started</h2>
                 </div>
             </div>
             <form className="form login" onSubmit={handleSubmit(onSubmit)}>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
 .App {
   text-align: center;
 }
@@ -49,11 +51,21 @@
   padding-bottom: 120px;
   z-index: 1;
 }
+
+#login-banner h1 {
+  font-family: 'Love Ya Like A Sister';
+}
+
+#login-banner h2 {
+  font-family: 'Courier New';
+}
+
 .img.logo {
   position: absolute;
   padding: 30px;
   z-index: 3;
 }
+
 .img.splash {
   z-index: 2;
   padding: 10px;
@@ -67,11 +79,11 @@
   border: 1px solid lightgrey;
   border-radius: 10px;
   box-shadow: 2px 2px 5px grey;
-  width:600px ;
+  width: 600px;
   height: 120px;
   z-index: 3;
   border-bottom: 10px #845EC2 solid;
-  margin:auto;
+  margin: auto;
 }
 
 .form.login {
@@ -81,10 +93,10 @@
 
 
 .input {
-  display:flex;
+  display: flex;
   position: relative;
   align-items: center;
-  border: 3px solid lightgrey;
+  border: 3px solid #969696;
   border-radius: 25px;
   width: 500px;
   padding: 5px;
@@ -102,15 +114,27 @@
   padding: 0;
   border: none;
   background: none;
+  cursor: pointer;
+}
+
+.input button:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .input input {
+  padding-left: 10px;
   border: none;
   background: none;
   outline: none;
-  font-size: 20px;
+  font-size: 24px;
   width: 500px;
+  font-family:'Courier New', Courier, monospace;
 }
+
+::placeholder {
+  color: #969696;
+}
+
 .input label {
   position: relative;
   padding-left: 5px;
@@ -137,27 +161,39 @@
 
 #navbar-user {
   position: absolute;
-  left: 85%;
   display: flex;
   align-items: center;
-  padding: 5px 0px;
   color: white;
+  cursor: pointer;
+  right: 0px;
+}
+
+#navbar-user:hover{
+  transform: scale(1.1, 1.1);
 }
 
 #navbar-user span {
   font-size: 18px;
-  border-bottom: 1px solid white;
-}
-
-#navbar-user span:hover {
-  font-size: 18px;
-  border-bottom: 1px solid #E7B355;
-  color: #E7B355;
+  background-color: #E7B355;
+  padding-right: 20px;
+  padding-left: 10px;
+  border-radius: 10px;
+  font-family: 'Courier New';
 }
 
 #navbar-user img {
+  position: relative;
   width: 40px;
   height: 40px;
+  background-color: #E7B355;
+  padding: 0px;
+  border-radius: 50%;
+  right: 10px;
+}
+
+#navbar h3 {
+  font-family: 'Love Ya Like A Sister';
+  cursor: default;
 }
 
 .form.translation {
@@ -166,7 +202,7 @@
 
 .form.signs {
   top: 50px;
-  height:auto;
+  height: auto;
 }
 
 .translation.list {
@@ -184,7 +220,7 @@
   width: 600px;
 }
 
-.input.translation button{
+.input.translation button {
   padding-left: 20px;
 }
 
@@ -193,4 +229,43 @@
   display: grid;
   text-align: left;
   padding-left: 30px;
+  color:#969696;
+  font-family: 'Courier New';
+  cursor: default;
+}
+
+#profile-header{
+  color:#7a7a7a;
+  font-family: 'Courier New';
+  cursor: default;
+}
+
+#profile-actions{
+  display: grid;
+}
+
+#profile-actions button {
+  position: absolute;
+  background-color: #845EC2;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  padding: 3px 5px;
+  cursor: pointer;
+  top: 90px;
+  font-size: 18px;
+  font-family: 'Courier New';
+}
+
+#profile-actions button:hover {
+  transform: scale(1.1, 1.1);
+}
+
+#btn-login {
+  right: 10px;
+
+}
+
+#btn-clear-history {
+  left: 10px;
 }
