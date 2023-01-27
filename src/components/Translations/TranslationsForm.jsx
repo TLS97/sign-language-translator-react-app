@@ -7,7 +7,8 @@ const TranslationsForm = ({ onTranslate }) => {
 
     const onSubmit = ({ translationNotes }) => {
       translationNotes = translationNotes.replace(/[^a-zA-Z]/g, "")
-      onTranslate(translationNotes)}
+      let translationNotesLowerCase = translationNotes.toLowerCase()
+      onTranslate(translationNotesLowerCase)}
     
   return (
     <div className="translation banner">
