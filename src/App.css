@@ -50,6 +50,7 @@
   padding: 20px;
   padding-bottom: 120px;
   z-index: 1;
+  cursor: default;
 }
 
 #login-banner h1 {
