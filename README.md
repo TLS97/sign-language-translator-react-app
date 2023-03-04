@@ -1,6 +1,6 @@
 # Sign Language Translator
 
-This project is a frontend application developed using React. The application has been deployed to Vercel and can be found [here]().
+This project is a frontend application developed using React. The application has been deployed to Vercel and can be found [here](https://lost-in-translation-gilt.vercel.app/).
 
 ## Description
 
